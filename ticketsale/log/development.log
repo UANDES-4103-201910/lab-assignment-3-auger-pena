@@ -2389,3 +2389,103 @@ Completed 200 OK in 150ms (Views: 87.0ms | ActiveRecord: 1.0ms)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estadio Nacional"], ["address", "Grecia"], ["capacity", 60000], ["created_at", "2019-03-28 22:52:51.955965"], ["updated_at", "2019-03-28 22:52:51.955965"]]
   [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 23:07:43.850135"], ["updated_at", "2019-03-28 23:07:43.850135"]]
+  [1m[35m (55.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 23:07:43.907427"], ["updated_at", "2019-03-28 23:07:43.907427"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 23:07:43.914988"], ["updated_at", "2019-03-28 23:07:43.914988"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 23:07:43.922957"], ["updated_at", "2019-03-28 23:07:43.922957"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 23:07:43.930005"], ["updated_at", "2019-03-28 23:07:43.930005"]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 23:07:43.955188"], ["updated_at", "2019-03-28 23:07:43.955188"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 23:07:43.968235"], ["updated_at", "2019-03-28 23:07:43.968235"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 23:07:43.978014"], ["updated_at", "2019-03-28 23:07:43.978014"]]
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 23:07:44.000635"], ["updated_at", "2019-03-28 23:07:44.000635"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 23:07:44.011278"], ["updated_at", "2019-03-28 23:07:44.011278"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estadio Nacional"], ["address", "Grecia"], ["capacity", 60000], ["created_at", "2019-03-28 23:07:44.023851"], ["updated_at", "2019-03-28 23:07:44.023851"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bon jovi"], ["description", "concierto"], ["start_date", "2020-09-01 19:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.041868"], ["updated_at", "2019-03-28 23:07:44.041868"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lady Gaga"], ["description", "beneficencia"], ["start_date", "2021-09-01 19:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.048821"], ["updated_at", "2019-03-28 23:07:44.048821"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Los Pulentos"], ["description", "show"], ["start_date", "2022-09-01 17:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.053531"], ["updated_at", "2019-03-28 23:07:44.053531"]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Bon jovi"], ["description", "concierto"], ["start_date", "2020-09-01 19:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.062094"], ["updated_at", "2019-03-28 23:07:44.062094"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Lady Gaga"], ["description", "beneficencia"], ["start_date", "2021-09-01 19:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.074214"], ["updated_at", "2019-03-28 23:07:44.074214"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "start_date", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Los Pulentos"], ["description", "show"], ["start_date", "2022-09-01 17:00:00"], ["venue_id", 4], ["created_at", "2019-03-28 23:07:44.084231"], ["updated_at", "2019-03-28 23:07:44.084231"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Platea"], ["created_at", "2019-03-28 23:07:44.097085"], ["updated_at", "2019-03-28 23:07:44.097085"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Oro"], ["created_at", "2019-03-28 23:07:44.105904"], ["updated_at", "2019-03-28 23:07:44.105904"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Andes"], ["created_at", "2019-03-28 23:07:44.110798"], ["updated_at", "2019-03-28 23:07:44.110798"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Platea"], ["created_at", "2019-03-28 23:07:44.117562"], ["updated_at", "2019-03-28 23:07:44.117562"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Oro"], ["created_at", "2019-03-28 23:07:44.122990"], ["updated_at", "2019-03-28 23:07:44.122990"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Andes"], ["created_at", "2019-03-28 23:07:44.129375"], ["updated_at", "2019-03-28 23:07:44.129375"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m

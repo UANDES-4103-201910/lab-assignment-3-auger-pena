@@ -2262,3 +2262,130 @@ Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms)
   [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets"."event_id", MAX(count_all) FROM "tickets" GROUP BY "tickets"."event_id" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(event_id, MAX(count_all)) AS count_event_id_max_count_all, "tickets"."event_id" AS tickets_event_id FROM "tickets" GROUP BY "tickets"."event_id"[0m
   [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT  "tickets"."event_id", MAX(count_all) FROM "tickets" GROUP BY "tickets"."event_id" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-03-28 16:07:05 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/web/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/web/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6.2/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 73ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 16:07:16 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 1294ms (Views: 1268.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-03-28 16:08:13 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/web/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/web/.rvm/gems/ruby-2.4.1/gems/railties-5.1.6.2/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-03-28 16:08:25 -0300
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for ::1 at 2019-03-28 17:31:20 -0300
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered orders/index.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 150ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 22:02:12.912743"], ["updated_at", "2019-03-28 22:02:12.912743"]]
+  [1m[35m (39.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 22:02:12.954937"], ["updated_at", "2019-03-28 22:02:12.954937"]]
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 22:02:12.966516"], ["updated_at", "2019-03-28 22:02:12.966516"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 22:02:12.978716"], ["updated_at", "2019-03-28 22:02:12.978716"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 22:02:12.989557"], ["updated_at", "2019-03-28 22:02:12.989557"]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 22:52:46.509835"], ["updated_at", "2019-03-28 22:52:46.509835"]]
+  [1m[35m (32.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 22:52:46.544551"], ["updated_at", "2019-03-28 22:52:46.544551"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 22:52:46.554260"], ["updated_at", "2019-03-28 22:52:46.554260"]]
+  [1m[35m (19.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 22:52:46.576204"], ["updated_at", "2019-03-28 22:52:46.576204"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 22:52:46.597074"], ["updated_at", "2019-03-28 22:52:46.597074"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 22:52:46.616049"], ["updated_at", "2019-03-28 22:52:46.616049"]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 22:52:46.626635"], ["updated_at", "2019-03-28 22:52:46.626635"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 22:52:46.634482"], ["updated_at", "2019-03-28 22:52:46.634482"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 22:52:46.642897"], ["updated_at", "2019-03-28 22:52:46.642897"]]
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 22:52:46.650443"], ["updated_at", "2019-03-28 22:52:46.650443"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estadio Nacional"], ["address", "Grecia"], ["capacity", 60000], ["created_at", "2019-03-28 22:52:46.670567"], ["updated_at", "2019-03-28 22:52:46.670567"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 22:52:51.901369"], ["updated_at", "2019-03-28 22:52:51.901369"]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 22:52:51.916916"], ["updated_at", "2019-03-28 22:52:51.916916"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 22:52:51.920754"], ["updated_at", "2019-03-28 22:52:51.920754"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 22:52:51.924442"], ["updated_at", "2019-03-28 22:52:51.924442"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 22:52:51.927919"], ["updated_at", "2019-03-28 22:52:51.927919"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaime"], ["last_name", "Auger"], ["email", "jiauger@miuandes.cl"], ["phone", "981944367"], ["password", "microlab"], ["user_address", "rodrigo de triana"], ["created_at", "2019-03-28 22:52:51.932171"], ["updated_at", "2019-03-28 22:52:51.932171"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rodrigo"], ["last_name", "Peña"], ["email", "rpena@miuandes.cl"], ["phone", "235835238"], ["password", "hacker"], ["user_address", "las vistimas"], ["created_at", "2019-03-28 22:52:51.935585"], ["updated_at", "2019-03-28 22:52:51.935585"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cristobal"], ["last_name", "Uslar"], ["email", "cuslar"], ["phone", "62432487"], ["password", "294-ccl"], ["user_address", "carmencita"], ["created_at", "2019-03-28 22:52:51.939071"], ["updated_at", "2019-03-28 22:52:51.939071"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vicente"], ["last_name", "Zoto"], ["email", "vazoto@miuandes.cl"], ["phone", "234678876"], ["password", "zelda"], ["user_address", "la gloria"], ["created_at", "2019-03-28 22:52:51.942588"], ["updated_at", "2019-03-28 22:52:51.942588"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "user_address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fabian"], ["last_name", "Coverg"], ["email", "fcoverg@miuandes.cl"], ["phone", "92735351"], ["password", "chiquita"], ["user_address", "las verbenas"], ["created_at", "2019-03-28 22:52:51.946862"], ["updated_at", "2019-03-28 22:52:51.946862"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "capacity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Estadio Nacional"], ["address", "Grecia"], ["capacity", 60000], ["created_at", "2019-03-28 22:52:51.955965"], ["updated_at", "2019-03-28 22:52:51.955965"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
